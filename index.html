@@ -14,9 +14,11 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                    }
-                }
-            }
+                        'gray1': '#494949',
+                        'gray2': '#737373',
+                    },
+                },
+            },
         }
     </script>
 
@@ -42,9 +44,88 @@
 </head>
 
 <body class="font-manrope">
-    <header>
+    <header class="bg-gradient-to-t from-white to-[#edf0f5]">
+        <div class="w-5/6 mx-auto">
+            <!-- nav  -->
+            <nav class="flex justify-between items-center px-5 py-8">
+                <!-- left -->
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-3 font-semibold -rotate-45"></i>
+                    <h2 class="text-3xl font-extrabold text-[#212121]">Rinterio</h2>
+                </div>
+
+                <!-- middle -->
+                <div class="md:flex gap-9 hidden">
+                    <a class="text-[#494949] font-extrabold hover:text-[#494949] hover:font-extrabold" href=""> Home
+                    </a>
+                    <a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href=""> Services
+                    </a>
+                    <a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href=""> Portfolio
+                    </a>
+                    <a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href=""> Blogs </a>
+                    <a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href=""> Contact Us
+                    </a>
+                </div>
+
+                <!-- last -->
+                <div class="hidden md:flex items-center gap-4">
+                    <i
+                        class="fa-solid fa-magnifying-glass bg-white p-3 rounded-full  text-gray-500 border border-gray-200 "></i>
+                    <i
+                        class="fa-solid fa-cart-shopping  bg-white p-3 rounded-full  text-gray-500 border border-gray-200 "></i>
+                    <button class="flex bg-[#ABEF5F] rounded-full px-4 py-2 justify-center items-center gap-2">
+                        <h4 class="font-extrabold text-xl text-[#1C1C1C]">Book Consult</h4>
+                        <i class="fa-solid fa-arrow-right bg-black text-white rounded-full p-3 -rotate-45"></i>
+                    </button>
+                </div>
+
+                <!-- small -->
+                <div class="dropdown dropdown-end md:hidden">
+                    <div>
+                        <i
+                            class="fa-solid fa-bars  bg-white p-3 rounded-full  text-gray-500 border border-gray-200 "></i>
+                    </div>
+                    <ul class="dropdown-content">
+                        <li></li>
+                        <a class="text-[#494949] font-extrabold hover:text-[#494949] hover:font-extrabold" href=""> Home
+                        </a>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Services </a>
+                        </li>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Portfolio </a>
+                        </li>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Blogs </a>
+                        </li>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Contact Us </a>
+                        </li>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Search </a>
+                        </li>
+                        <li><a class="text-[#737373] font-normal hover:text-[#494949] hover:font-extrabold" href="">
+                                Book Consult </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- banner -->
+            <div class="space-y-6">
+                <img class="mx-auto" src="assets/banner.png" alt="">
+                <h1 class="text-[#212121] font-extrabold text-3xl md:text-6xl text-center">A barn house of this design has a striking appearance</h1>
+                <p class="text-[#494949] font-medium text-base text-center w-full md:w-4/5 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="w-full btn bg-lime-200 rounded-full px-10 mx-auto flex gap-2 items-center md:w-auto">
+                    <h3 class="font-extrabold text-xl ">View Details</h3>
+                    <i class="fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-3 font-semibold -rotate-45"></i>
+                </button>
+            </div>
+        </div>
 
     </header>
+
+    
 
     <main>
 
